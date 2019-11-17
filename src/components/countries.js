@@ -3,7 +3,7 @@ import React from 'react'
 const Countries = ({ countries, london }) => {
 
   return (<div id={'comparison'}>
-    <h4>Compared to the number of planes above...</h4>
+    <h4>Compared to all the planes above ...</h4>
     <div id={'countries'}>
       {countries.map((country, i) => {
         const fraction = Math.round(london / country.count * 100)

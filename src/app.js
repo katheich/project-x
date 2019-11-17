@@ -67,7 +67,7 @@ class App extends React.Component {
     }
     return (<div>
       <h1>Skystalker</h1>
-      <h3>Explore the number of planes currently in the crowded London sky</h3>
+      <h3>Explore the number of airplanes currently in the crowded London sky</h3>
       <London london={this.state.dataLondon} />
       <Countries countries={this.state.countries} london={this.state.dataLondon.length} />
     </div>
