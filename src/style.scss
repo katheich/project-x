@@ -1,1 +1,117 @@
+$medium-grey:rgb(153,	158,	163);
+$light-grey: rgb(192,	200,	206);
+$dark-grey: rgb(115,	131,	143);	
+$sky-blue: #ccebff;
+$title-size: 50px;
+$title2-size: 20px;
+$subheading: 16px;
+$count-size: 50px;
+$text-size: 14px;
+
+* {
+  box-sizing: border-box;  
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('https://svg-clipart.com/svg/white/JVJckrB-london-skyline-vector.svg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+  background-color: $sky-blue;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Odibee Sans', cursive;
+  font-size: $title-size;
+  margin: 10px 0 0;
+}
+
+h3 {
+  text-align: center;
+  font-weight: 300;
+  font-size: $title2-size;
+  margin: 0 0 10px;
+  color: $medium-grey;
+  text-shadow: 1px 1px #000000;
+}
+
+h4 {
+  margin: 10px 0;
+  font-size: $subheading;
+  font-weight: 500;
+}
+
+#london {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 25px 0;
+
+  #totalCount {
+    font-size: $count-size;
+    font-weight: 700;
+    border: 15px solid $dark-grey;
+    border-radius: 100%;
+    padding: 60px 72.4px;
+    margin: 10px; 
+    box-shadow: 2px 2px 2px #000000;
+    color: $dark-grey;
+    text-shadow: 2px 2px 2px #000000;
+  }
+
+  #origins {
+    padding: 0 80px;
+    
+    #origin-list {
+      font-size: $text-size;
+      max-height: 202px;
+      display: flex;
+      flex-flow: column wrap;
+
+      div {
+        margin: 1px 18px 0 0;
+      }
+    }
+  }
+}
+
+#comparison {
+  margin: 0 0 20vh;
+
+  #countries {
+    display: flex;
+    justify-content: space-around;
+
+    .country {
+      text-align: center;
+      h2 {
+        font-size: $subheading;
+        font-weight: 500;
+        margin: 0;
+        color: $medium-grey;
+        text-shadow: 0.5px 0.5px $dark-grey;
+      }
+      p {
+        margin: 0;
+        font-size: $text-size;
+      }
+    }
+  }
+}
+
+
+
+
+
 
