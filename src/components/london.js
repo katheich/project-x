@@ -38,34 +38,44 @@ class London extends React.Component {
   }
   
 
-  // componentDidMount() {
-  //   anime({
-  //     targets: '#totalCount',
-  //     rotate: '1turn',
-  //     duration: 5000,
-  //     loop: true,
-  //     easing: 'easeInOutExpo'
-  //   })
-  // }
+  componentDidMount() {
+    anime({
+      targets: '#count-plane',
+      rotate: '1turn',
+      duration: 5000,
+      loop: true,
+      easing: 'linear'
+    })
+  }
 
   // return finished javascripts
   
   render() {
-    return <div id={'london'}>
-      <div id={'totalCount'}>
-        <div id={'count-number'}>
-          {this.getLength(this.props.london)}
-        </div>
-      </div>
-      <div id={'origins'}>
-        <h4>Coming from ...</h4>
-        <div id={'origin-list'}>
-          {this.getOrigins(this.props.london).map((origin, i) => {
-            return <div key={i}>
-              {`${i + 1}. ${origin.country}: ${origin.perc}%`}
+    return <div className="container" id="london">
+      <div className="columns">
+        <div className="column is-2"></div>
+        <div className="column is-3">
+          <div id="total-count">
+            <div id="plane-wrapper">
+              <div id="count-plane"></div>
             </div>
-          })}
+            <div className="is-size-2" id="count-number">
+              {this.getLength(this.props.london)}
+            </div>
+          </div>
         </div>
+        <div className="column is-1"></div>
+        <div className="column is-3 has-text-left" id={'origins'}>
+          <p className="is-size-5">Coming from ...</p>
+          <div id="origin-list">
+            {this.getOrigins(this.props.london).map((origin, i) => {
+              return <p key={i} className="is-size-6">
+                {`${i + 1}. ${origin.country}: ${origin.perc}%`}
+              </p>
+            })}
+          </div>
+        </div>
+        <div className="column is-2"></div>
       </div>
     </div>}
 }

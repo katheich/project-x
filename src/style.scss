@@ -16,101 +16,91 @@ $text-size: 14px;
 
 html, body {
   height: 100%;
-  width: 100%;
 }
 
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+#root {
   background-image: url('https://svg-clipart.com/svg/white/JVJckrB-london-skyline-vector.svg');
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: contain;
   background-color: $sky-blue;
+  min-height: 100%
 }
 
-h1 {
-  text-align: center;
+.title {
   font-family: 'Odibee Sans', cursive;
-  font-size: $title-size;
-  margin: 10px 0 0;
 }
 
-h3 {
-  text-align: center;
+.subtitle {
   font-weight: 300;
-  font-size: $title2-size;
-  margin: 0 0 10px;
   color: $medium-grey;
   text-shadow: 1px 1px #000000;
 }
 
-h4 {
-  margin: 10px 0;
-  font-size: $subheading;
+p.is-size-5 {
   font-weight: 500;
 }
 
 #london {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin: 25px 0;
 
-  #totalCount {
-    font-size: $count-size;
-    font-weight: 700;
-    // border: 15px solid $dark-grey;
-    // border-radius: 100%;
-    padding: 60px 72.4px;
-    margin: 10px; 
-    // box-shadow: 2px 2px 2px #000000;
-    color: $dark-grey;
-    text-shadow: 2px 2px 2px #000000;
-    background-image: url(/images/airplaine-circle.png);
-    background-size: cover;
+  margin: 3vh 0;
+
+  #total-count {
+    height: 30vh;
+    width: 30vh;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    div {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+    }
+    #plane-wrapper {
+      width: 30vh;
+      height: 30vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      #count-plane {
+        background-image: url(/images/airplaine-circle.png);
+        background-size: cover;
+        width: 30vh;
+        height: 30vh;
+        position: relative;
+        left: 0%;
+        top: 0%;
+      }
+    }
+
+    #count-number {
+      font-weight: 700;
+      color: $dark-grey;
+      text-shadow: 2px 2px 2px #000000;
+    }
+
   }
 
   #origins {
-    padding: 0 80px;
-    
+   
     #origin-list {
-      font-size: $text-size;
-      max-height: 202px;
+      max-height: 26vh;
       display: flex;
       flex-flow: column wrap;
 
-      div {
-        margin: 1px 18px 0 0;
+      p {
+        margin: 0 2vw 0 0;
       }
     }
   }
 }
 
 #comparison {
-  margin: 0 0 20vh;
-
-  #countries {
-    display: flex;
-    justify-content: space-around;
-
+  margin-bottom: 5vh;
     .country {
-      text-align: center;
-      h2 {
-        font-size: $subheading;
-        font-weight: 500;
-        margin: 0;
-        color: $medium-grey;
-        text-shadow: 0.5px 0.5px $dark-grey;
-      }
-      p {
-        margin: 0;
-        font-size: $text-size;
-      }
+      padding-bottom: 0;
     }
-  }
 }
 
 

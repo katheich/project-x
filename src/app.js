@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom'
 import London from './components/london'
 import Countries from './components/countries'
 
+import 'bulma'
 import './style.scss'
 
 const london = [-0.510375,51.28676,0.334015,51.691874]
@@ -63,13 +64,29 @@ class App extends React.Component {
 
   render() {
     if (!(this.state.dataLondon && this.state.countries)) {
-      return <h2>Loading...</h2>
+      return <div className="hero is-fullheight">
+        <div className="hero-body">
+          <div className="container">
+            <p className="is-size-4 has-text-centered">Loading...</p>
+          </div>
+        </div>
+      </div>
     }
-    return (<div>
-      <h1>Skystalker</h1>
-      <h3>Explore the number of airplanes currently in the crowded London sky</h3>
-      <London london={this.state.dataLondon} />
-      <Countries countries={this.state.countries} london={this.state.dataLondon.length} />
+    return (<div className="section is-fullheight">
+      <div className="columns">
+        <div className="column is-1"></div>
+        <div className="column is-10">
+          <div className="section has-text-centered">
+            <div className="container">
+              <p className="title is-size-1">Skystalker</p>
+              <p className="subtitle is-size-5">Explore the number of airplanes currently in the crowded London sky</p>
+              <London london={this.state.dataLondon} />
+              <Countries countries={this.state.countries} london={this.state.dataLondon.length} />
+            </div>
+          </div>
+        </div>
+        <div className="column is-1"></div>
+      </div>
     </div>
     )
   }
