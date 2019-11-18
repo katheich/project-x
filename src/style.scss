@@ -8,7 +8,7 @@ $subheading: 16px;
 $count-size: 50px;
 $text-size: 14px;
 
-* {
+* { 
   box-sizing: border-box;  
   font-family: 'Oswald', sans-serif;
   font-weight: 300;
@@ -62,13 +62,15 @@ h4 {
   #totalCount {
     font-size: $count-size;
     font-weight: 700;
-    border: 15px solid $dark-grey;
-    border-radius: 100%;
+    // border: 15px solid $dark-grey;
+    // border-radius: 100%;
     padding: 60px 72.4px;
     margin: 10px; 
-    box-shadow: 2px 2px 2px #000000;
+    // box-shadow: 2px 2px 2px #000000;
     color: $dark-grey;
     text-shadow: 2px 2px 2px #000000;
+    background-image: url(/images/airplaine-circle.png);
+    background-size: cover;
   }
 
   #origins {
