@@ -2,20 +2,12 @@ $medium-grey:rgb(153,	158,	163);
 $light-grey: rgb(192,	200,	206);
 $dark-grey: rgb(115,	131,	143);	
 $sky-blue: #ccebff;
-$title-size: 50px;
-$title2-size: 20px;
-$subheading: 16px;
-$count-size: 50px;
-$text-size: 14px;
+
 
 * { 
   box-sizing: border-box;  
   font-family: 'Oswald', sans-serif;
   font-weight: 300;
-}
-
-html, body {
-  height: 100%;
 }
 
 #root {
