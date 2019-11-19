@@ -64,7 +64,7 @@ class London extends React.Component {
             </div>
           </div>
         </div>
-        <div className="column is-1"></div>
+        <div className="column is-1 desktop-only"></div>
         <div className="column is-3 has-text-left" id={'origins'}>
           <p className="is-size-5">Coming from ...</p>
           <div id="origin-list">
