@@ -55,8 +55,6 @@ p.is-size-5 {
       transform: translate(-50%,-50%);
     }
     #plane-wrapper {
-      width: 30vh;
-      height: 30vh;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -93,14 +91,13 @@ p.is-size-5 {
   }
 }
 
-
 #comparison {
     .country {
       padding-bottom: 0;
     }
 }
 
-
+// Mobile
 @media only screen and (max-width: 960px) { 
   
   #london #origins #origin-list {
@@ -119,6 +116,21 @@ p.is-size-5 {
   #main {
     padding-top: 3vh;
     padding-bottom: 3vh;
+  }
+}
+
+// fix iPad Pro
+@media only screen and (max-width: 1050px)  and (min-height: 1000px) { 
+  
+  #london #total-count {
+    height: 25vw;
+    width: 25vw;
+    #plane-wrapper {
+      #count-plane {
+        height: 25vw;
+        width: 25vw;
+      }
+    }
   }
 }
 
