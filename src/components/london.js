@@ -54,7 +54,7 @@ class London extends React.Component {
     return <div className="container" id="london">
       <div className="columns">
         <div className="column is-2"></div>
-        <div className="column is-3">
+        <div className="column is-3-desktop">
           <div id="total-count">
             <div id="plane-wrapper">
               <div id="count-plane"></div>
@@ -65,7 +65,7 @@ class London extends React.Component {
           </div>
         </div>
         <div className="column is-1 desktop-only"></div>
-        <div className="column is-3 has-text-left" id={'origins'}>
+        <div className="column is-3-desktop has-text-left" id={'origins'}>
           <p className="is-size-5">Coming from ...</p>
           <div id="origin-list">
             {this.getOrigins(this.props.london).map((origin, i) => {
