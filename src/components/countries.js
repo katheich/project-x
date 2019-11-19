@@ -4,7 +4,7 @@ const Countries = ({ countries, london }) => {
 
   return (<div className="container" id={'comparison'}>
     <div className="columns">
-      <div className="column is-2"></div>
+      <div className="column is-2 desktop-only"></div>
       <div className="column is-8">
         <p className="is-size-5 has-text-left">Compared to all the planes above ...</p>
         <div className="columns is-mobile is-multiline" id={'countries'}>
@@ -17,7 +17,7 @@ const Countries = ({ countries, london }) => {
           })}
         </div>
       </div>
-      <div className="column is-2"></div>
+      <div className="column is-2 desktop-only"></div>
     </div>
   </div>)
 

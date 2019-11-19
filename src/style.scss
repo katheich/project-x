@@ -88,11 +88,37 @@ p.is-size-5 {
   }
 }
 
+
 #comparison {
   margin-bottom: 5vh;
     .country {
       padding-bottom: 0;
     }
+}
+
+
+@media only screen and (max-width: 960px) { 
+  #london #origins #origin-list {
+    max-height: 100vh;
+    display: block;
+  }
+
+  #london.container {
+    margin: 0;
+  }
+  
+  #comparison {
+    margin-bottom: 0;
+  }
+
+  .desktop-only {
+    display: none;
+  }
+
+  .section {
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+  }
 }
 
 

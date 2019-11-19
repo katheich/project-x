@@ -74,7 +74,7 @@ class App extends React.Component {
     }
     return (<div className="section is-fullheight">
       <div className="columns">
-        <div className="column is-1"></div>
+        <div className="column is-1 desktop-only"></div>
         <div className="column is-10">
           <div className="section has-text-centered">
             <div className="container">
@@ -85,7 +85,7 @@ class App extends React.Component {
             </div>
           </div>
         </div>
-        <div className="column is-1"></div>
+        <div className="column is-1 desktop-only"></div>
       </div>
     </div>
     )
