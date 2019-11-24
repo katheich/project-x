@@ -63,9 +63,9 @@ You can launch the game on GitHub pages [here](https://katheich.github.io/projec
 - API is not always the fastet, and since not possible to calculate fractions, the components are not mounted until the data from London and at least one country has been returned (until then show a loading screen)
 
 ### London section
-  - takes detailed data from London
-  - plane count is enclosed by rotating circle using anime.js
-  - puts origins in an array of objects and sorts it according to number of planes
+- takes detailed data from London
+- plane count is enclosed by rotating circle using anime.js
+- puts origins in an array of objects and sorts it according to number of planes
 
     ```js
       getOrigins(dataLondon) {
@@ -96,7 +96,7 @@ You can launch the game on GitHub pages [here](https://katheich.github.io/projec
     ```
 
 ###  Country data
-  - takes number of planes above London and each country and divides to get percentage
+- takes number of planes above London and each country and divides to get percentage
 
 ## Screenshots
 
