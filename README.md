@@ -5,7 +5,7 @@
 
 ## Overview
 
-This is an extra-curricular project of the software engineering immersive course at GA London. The assignment was to create a **react app** using data from any API of our choice. The assignment was to completed **individually** over **one weekend**. 
+This is an extra-curricular project of the software engineering immersive course at GA London. The assignment was to create a **react app** using data from any API of our choice. The assignment was to be completed **individually** over **one weekend**. 
 
 Using live air traffic data from the OpenSky API, my app displays the current number of airplanes above London, putting this into perspective by comparing it to the total number of planes in the sky above entire countries.
 
