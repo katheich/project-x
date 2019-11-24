@@ -66,7 +66,6 @@ You can launch the game on GitHub pages [here](https://katheich.github.io/projec
 - takes detailed data from London
 - plane count is enclosed by rotating circle using anime.js
 - puts origins in an array of objects and sorts it according to number of planes
-
   ```js
     getOrigins(dataLondon) {
     const dataArray = Array.from(dataLondon)
