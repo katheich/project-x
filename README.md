@@ -5,7 +5,7 @@
 
 ## Overview
 
-This is a bonus project of the software engineering immersive course at GA London. The assignment was to create a **react app** using data from any API of our choice. The assignment was to completed **individually** over one *weekend*. 
+This is an extra-curricular project of the software engineering immersive course at GA London. The assignment was to create a **react app** using data from any API of our choice. The assignment was to completed **individually** over **one weekend**. 
 
 Using live air traffic data from the OpenSky API, my app displays the current number of airplanes above London, putting this into perspective by comparing it to the total number of planes in the sky above entire countries.
 
@@ -33,7 +33,7 @@ You can launch the game on GitHub pages [here](https://katheich.github.io/projec
 
 ## Approach
 
-- stored chosen country bounding boxes in an array, can be expanded easily
+- Found bounding boxes using BoundingBox and stored them in an array that the code loops through, can be expanded easily
   ```js
   const boundingBoxes = {
     'United Kingdom': [-14.02,49.67,2.09,61.06],
