@@ -47,19 +47,19 @@ You can launch the game on GitHub pages [here](https://katheich.github.io/projec
 - Fetching data from the API at the very start and handing it down to components which do different things with it
 - One fetch request for London (storing all data) and each country (storing only number of planes, i.e. length of array)
   - already sorts the countries in order of number of planes when saving them in state
-  ```js
-        .then(resp => {
-        let countries = [...this.state.countries]
-        countries
-          .push({
-            name: country,
-            count: resp.states.length
-          })
+    ```js
+          .then(resp => {
+          let countries = [...this.state.countries]
+          countries
+            .push({
+              name: country,
+              count: resp.states.length
+            })
 
-        countries = countries.sort(function(a, b) { return b.count - a.count } )
-        this.setState({ countries }, () => console.log(this.state))
-      })
-  ```
+          countries = countries.sort(function(a, b) { return b.count - a.count } )
+          this.setState({ countries }, () => console.log(this.state))
+        })
+    ```
 - API is not always the fastet, and since not possible to calculate fractions, the components are not mounted until the data from London and at least one country has been returned (until then show a loading screen)
 
 ### London section
@@ -67,33 +67,33 @@ You can launch the game on GitHub pages [here](https://katheich.github.io/projec
 - plane count is enclosed by rotating circle using anime.js
 - puts origins in an array of objects and sorts it according to number of planes
 
-    ```js
-      getOrigins(dataLondon) {
-      const dataArray = Array.from(dataLondon)
-      
-      return dataArray
-        .reduce((sum, elem) => {
-          const origin = elem[2].toString()
-          const index = sum.map(e => e.country).indexOf(origin)
-          if ( index > -1) {
-            sum[index].count += 1
-            return sum
-          } else {
-            sum.push({
-              country: origin,
-              count: 1
-            })
-            return sum
-          }
-        }, [])
-        .map((country) => {
-          const newCountry = country
-          newCountry.perc = Math.round((country.count) / dataArray.length * 100)
-          return newCountry
-        })
-        .sort(function(a, b) { return b.count - a.count } )
-    }
-    ```
+  ```js
+    getOrigins(dataLondon) {
+    const dataArray = Array.from(dataLondon)
+    
+    return dataArray
+      .reduce((sum, elem) => {
+        const origin = elem[2].toString()
+        const index = sum.map(e => e.country).indexOf(origin)
+        if ( index > -1) {
+          sum[index].count += 1
+          return sum
+        } else {
+          sum.push({
+            country: origin,
+            count: 1
+          })
+          return sum
+        }
+      }, [])
+      .map((country) => {
+        const newCountry = country
+        newCountry.perc = Math.round((country.count) / dataArray.length * 100)
+        return newCountry
+      })
+      .sort(function(a, b) { return b.count - a.count } )
+  }
+  ```
 
 ###  Country data
 - takes number of planes above London and each country and divides to get percentage
