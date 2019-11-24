@@ -73,20 +73,19 @@ class App extends React.Component {
       </div>
     }
     return (<div className="section" id="main">
-      <div className="columns">
-        <div className="column is-1 desktop-only"></div>
-        <div className="column is-10">
-          <div className="section has-text-centered" id="main2">
-            <div className="container">
-              <p className="title is-size-1">Skystalker</p>
-              <p className="subtitle is-size-5">Explore the number of airplanes currently in the crowded London sky</p>
-              <London london={this.state.dataLondon} />
-              <Countries countries={this.state.countries} london={this.state.dataLondon.length} />
-            </div>
-          </div>
+
+      <div className="section has-text-centered">
+        <div className="container">
+
+          <p className="title is-size-1">Skystalker</p>
+          <p className="subtitle is-size-5">Explore the number of airplanes currently in the crowded London sky</p>
+          
+          <London london={this.state.dataLondon} />
+         
+          <Countries countries={this.state.countries} london={this.state.dataLondon.length} />
         </div>
-        <div className="column is-1 desktop-only"></div>
       </div>
+
     </div>
     )
   }

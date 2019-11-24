@@ -27,6 +27,7 @@ You can launch the game on GitHub pages [here](https://katheich.github.io/projec
 - OpenSky API
 - Git and GitHub
 - BoundingBox
+- Bulma
 - Google Fonts
 
 ## Approach
@@ -46,5 +47,3 @@ You can launch the game on GitHub pages [here](https://katheich.github.io/projec
 [BoundingBox](https://boundingbox.klokantech.com/) by Klokan Technologies
 
 [London skyline](https://pixabay.com/vectors/london-skyline-silhouette-city-155996/) from OpenClipart-Vectors via pixabay
-
-

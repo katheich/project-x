@@ -53,8 +53,8 @@ class London extends React.Component {
   render() {
     return <div className="container" id="london">
       <div className="columns">
-        <div className="column is-2"></div>
-        <div className="column is-3-desktop">
+
+        <div className="column is-half">
           <div id="total-count">
             <div id="plane-wrapper">
               <div id="count-plane"></div>
@@ -64,19 +64,19 @@ class London extends React.Component {
             </div>
           </div>
         </div>
-        <div className="column is-1 desktop-only"></div>
-        <div className="column is-3-desktop has-text-left" id={'origins'}>
-          <p className="is-size-5">Coming from ...</p>
+
+        <div className="column is-half-desktop has-text-left" id={'origins'}>
+          <p className="is-size-6 subsubheading">Coming from ...</p>
           <div id="origin-list">
             {this.getOrigins(this.props.london).map((origin, i) => {
-              return <p key={i} className="is-size-6">
-                {`${i + 1}. ${origin.country}: ${origin.perc}%`}
+              return <p key={i} className="is-size-7">
+                {`${i + 1}. ${origin.country}: ${origin.count} (${origin.perc}%)`}
               </p>
             })}
           </div>
         </div>
-        <div className="column is-2"></div>
       </div>
+      
     </div>}
 }
 
