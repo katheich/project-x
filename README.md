@@ -1,6 +1,6 @@
 
 ### ![GA](https://cloud.githubusercontent.com/assets/40461/8183776/469f976e-1432-11e5-8199-6ac91363302b.png) General Assembly, Software Engineering Immersive
-# Project #X: Skystalker
+# Skystalker
  
 
 ## Overview
@@ -9,7 +9,7 @@ This is an extra-curricular project of the software engineering immersive course
 
 Using live air traffic data from the OpenSky API, my app displays the current number of airplanes above London, putting this into perspective by comparing it to the total number of planes in the sky above entire countries.
 
-You can launch the game on GitHub pages [here](https://katheich.github.io/project-x/), or find the GitHub repo [here](https://github.com/katheich/project-x).
+You can launch the game on GitHub pages [here](https://katheich.github.io/skystalker/), or find the GitHub repo [here](https://github.com/katheich/skystalker).
 
 ## Brief
 
