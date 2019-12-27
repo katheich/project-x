@@ -105,15 +105,15 @@ You can launch the game on GitHub pages [here](https://katheich.github.io/skysta
 
 ![Mobile screens](./src/images/screenshots/mobile.png)
 
-## Future features
+## Potential future features
 
 - Could extend this to more cities
 - Could display a map of London showing the location of planes in real time
 
 ## Bugs / lessons learned
 
-- Since rotation animation requires adjusting the transform CSS property, and having the number and the circle on top of each to be in the same position, had to wrap the rotating image into an empty wrapper that was fixed in place causing some layout issues with flexbox, maybe there would be more flexible solutions
-
+- Since rotation animation requires adjusting the transform CSS property, and having the number and the circle on top of each to be in the same position, had to wrap the rotating image into an empty wrapper that was fixed in place causing some layout issues with flexbox, probably there would be more flexible solutions 
+- Since the page needs to have at least the number of planes above London and one country to display correctly, the page shows a loading screen until that minimum amount of data is returned from the API (since it can take even up to a few minutes depending on how responsive the API is)
 
 ## Artwork and credit
 
