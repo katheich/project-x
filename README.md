@@ -48,17 +48,17 @@ You can launch the game on GitHub pages [here](https://katheich.github.io/skysta
 - One fetch request for London (storing all data) and each country (storing only number of planes, i.e. length of array)
   - already sorts the countries in order of number of planes when saving them in state
     ```js
-          .then(resp => {
-          let countries = [...this.state.countries]
-          countries
-            .push({
-              name: country,
-              count: resp.states.length
-            })
+      .then(resp => {
+        let countries = [...this.state.countries]
+        countries
+          .push({
+            name: country,
+            count: resp.states.length
+          })
 
-          countries = countries.sort(function(a, b) { return b.count - a.count } )
-          this.setState({ countries }, () => console.log(this.state))
-        })
+        countries = countries.sort(function(a, b) { return b.count - a.count } )
+        this.setState({ countries }, () => console.log(this.state))
+      })
     ```
 - API is not always the fastet, and since not possible to calculate fractions, the components are not mounted until the data from London and at least one country has been returned (until then show a loading screen)
 
